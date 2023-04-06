@@ -11,14 +11,14 @@ class Program
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             connection.Open();
-            //int input = int.Parse(Console.ReadLine());
+            int input = int.Parse(Console.ReadLine());
             string query1 = "SELECT * FROM EmployeeInfo WHERE employee_id=1";
             using (SqlCommand command = new SqlCommand(query1, connection))
             { 
-                /*
+                
                 command.CommandType = System.Data.CommandType.StoredProcedure;
                 command.Parameters.Add("id",SqlDbType.Int).Value=input;
-                */
+                
                 Console.Write(command.ExecuteNonQuery());
                 //SqlDataReader reader = command.ExecuteNonQuery();
                 //while (reader.Read())
@@ -61,7 +61,7 @@ class Program
 
 
 
-
+        /*
             string query2 = "SELECT Employee_id,EmployeeDept, Salary FROM EmployeeInfo";
             using (SqlCommand command = new SqlCommand(query2, connection))
             {
@@ -77,7 +77,7 @@ class Program
                         Console.WriteLine(key + "      " + myDetails[key][0]+"        "+ myDetails[key][1]);
                     }
                 }
-            }
+            }*/
 
         }
         Console.ReadLine();
