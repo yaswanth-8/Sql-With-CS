@@ -61,7 +61,7 @@ class Program
 
 
 
-/*
+
             string query2 = "SELECT Employee_id,EmployeeDept, Salary FROM EmployeeInfo";
             using (SqlCommand command = new SqlCommand(query2, connection))
             {
@@ -78,7 +78,7 @@ class Program
                     }
                 }
             }
-*/
+
         }
         Console.ReadLine();
     }
